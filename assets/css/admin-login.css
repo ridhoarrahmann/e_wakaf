@@ -1,0 +1,115 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+}
+
+.login-card{
+    width: 90%;
+    background-color: #DC5C00;
+   
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    
+}
+
+.login-card .col1{
+    background-color:white;
+    height: 300px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.login-card .col2{
+    
+    background-color:#DC5C00;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.login-card .logo{
+    
+    
+}
+.login-card .logo h1{
+    width: 100%;
+    text-align: center;
+    color: #DC5C00;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.login-card img{
+    width: 150px;
+    height: 150px;
+}
+.login-form-container{
+    width: 100%;
+}
+.login-form-container form input{
+    display: block;
+    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid white;
+    width: 50%;
+    
+}
+.login-form-container form{
+    margin-top: 40px;
+}
+.login-form-container h2{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+.login-form-container .login-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.login-form-container .btn-login{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.login-form-container .btn-login button{
+    width: 50%;
+    background-color: white;
+    color: #DC5C00;
+    border: none;
+    border-radius: 300px;
+}
+@media (min-width: 768px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 600px;
+    }
+    
+    .login-card .col1{
+        background-color:white;
+        height: 500px;
+        border-radius: 20px 0 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .login-card .col2{
+        height: 500px;
+    }
+    .login-card img{
+        width: 200px;
+        height: 200px;
+    }
+    
+    
+}

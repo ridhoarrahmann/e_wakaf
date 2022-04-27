@@ -1,0 +1,145 @@
+.navbar .navbar-nav a{
+    color: #DC5C00 !important;
+    font-size: 23px;
+    margin-right:5px;
+    margin-left: 5px;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    
+    
+}
+.navbar .profile{
+    margin-left: 20;
+}
+.jumbotron{
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    
+    
+}
+.row{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+.jumbotron span h1{
+    font-weight: 300;
+}
+.jumbotron h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    
+}
+.halo{
+    height: 100px;
+}
+.jumbotron-content{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    padding: 30px;
+    
+
+}
+.menu .row{
+    height: 500px;
+    margin-top: 40px;
+}
+.menu h1{
+    text-align: center  ;
+}
+.menu .menu-item-container{
+    padding: 20px;
+    height: 300px;
+    
+    object-fit: cover;
+}
+.menu-item{
+    
+    height: 100%;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.form-sedekah-container{
+    width: 100%;
+    height: 600px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-sedekah-container{
+    font-size: 20px;
+    
+    
+
+}
+.form-sedekah table{
+    
+}
+.form-sedekah-container .btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}   
+.form-sedekah-container button{
+    width: 50%;
+    background-color: #DC5C00;
+    border: none;
+}
+.form-sedekah-container h1{
+    text-align: center;
+    margin-bottom: 50px;
+    color: rgb(36, 35, 35);
+}
+.form-sedekah label{
+    color: rgb(36, 35, 35);;
+}
+.form-sedekah tr{
+    border-collapse: separate;
+    border-spacing: 30px 30px;
+}
+.form-sedekah-container .form-sedekah{
+    margin-left: 20px;
+    width: 250px;
+    border-radius: 10px;
+    border: 2px solid #DC5C00;
+    background-color: transparent;
+}
+.transaction-process{
+    text-align: center;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.transaction-process h1{
+    color: rgb(51, 51, 51);
+    font-weight: 400;
+    font-size: 30px;
+
+}
+.transaction-process span h1{
+    font-weight:600;
+    margin-top: 40px;
+}
+.transaction-process h2{
+    font-weight: 300;
+    
+}
+
+.transaction-process button{
+    background-color: #DC5C00;
+    color: white;
+    font-size: 25px;
+    padding: 5px 50px 5px 50px;
+    margin-top: 30px;
+}

@@ -1,0 +1,12 @@
+.navbar-nav{
+    background-color: #DC5C00!important;
+}
+.sidebar-brand .sidebar-brand-icon img{
+    width: 10px;
+    height: 50px;
+}
+.sidebar-brand img{
+    width: 10px;
+    height: 50px;
+    object-fit: cover;
+}
