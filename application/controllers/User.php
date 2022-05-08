@@ -52,12 +52,44 @@ class User extends CI_Controller {
 			$this->load->view('layout/user/footer');
 		}
 		else{
-			$this->_sedekah();
+			$kategori=$this->input->post('wakaf_type');
+			echo ($kategori);
+			if($kategori=='kendaraan'){
+				$this->wakaf_kendaraan();
+			}
+			// $this->_sedekah();
 		}
 
 	
 		
 	}	
+	private function wakaf_kendaraan(){
+			$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+			$data['transaction'] = $this->db->get_where('transaction', ['email' => $this->session->userdata('email')])->result_array();
+			$this->load->view('layout/user/header',$data);
+			$this->load->view('layout/user/navbar');
+			$this->load->view('form_wakaf_kendaraan',$data);
+			$this->load->view('layout/user/footer');
+			$dataWakaf=[
+				"id_user"=>$this->input->post('id_user'),
+				"username"=>$this->input->post('username'),
+				"name"=>$this->input->post('name'),
+				"email"=>$this->input->post('email'),
+				"phone"=>$this->input->post('phone'),
+				"category"=>'wakaf',
+				"nominal"=>$this->input->post('amount'),
+				'date'=>date('Y-m-d H:i:s'),
+				'status'=>"draft",
+				'description'=>$this->input->post('desc'),
+				'wakaf_type'=>$this->input->post('wakaf_type'),
+	
+				
+			];
+
+	}
+
+	
+
 	private function _sedekah(){
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
@@ -78,6 +110,7 @@ class User extends CI_Controller {
 
 			
 		];
+		
 		// $data_sedekah=[
 		// 	""
 		// ]
@@ -89,6 +122,8 @@ class User extends CI_Controller {
 		// $this->load->view('layout/user/footer');
 
 	}
+	
+	
 
 
 	

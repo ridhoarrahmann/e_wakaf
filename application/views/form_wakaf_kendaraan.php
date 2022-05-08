@@ -1,7 +1,7 @@
-    <div class="content">
+<div class="content">
         <div class="form-sedekah-container " style="margin-top: 50px;">
             <div class="form mt-5" >
-            <h1>Form Wakaf</h1>
+            <h1>Form Wakaf Kendaraan</h1>
             <form method="post" action="<?= base_url('index.php/user/sedekah')?>">
             <table cellpadding="7">
 
@@ -18,15 +18,15 @@
               
 
                 <tr>
-                    <td><label for="name"> Nama</label></td>
+                    <td><label for="nama_kendaraan"> Nama Kendaraan</label></td>
                     <td><input type="text" class="form-sedekah"name="name" id="name" value="<?= $user['name']?>" readonly></td>
                 </tr>
                 <tr>
-                    <td> <label for="email">E-Mail</label> </td>
+                    <td> <label for="years">Tahun</label> </td>
                     <td><input type="text" class="form-sedekah" name="email" id="email" value="<?= $user['email'] ?>" readonly></td>
                 </tr>
                 <tr>
-                    <td><label for="phone"> phone</label></td>
+                    <td><label for="Plat"> Plat Nomer</label></td>
                     <td><input type="text" class="form-sedekah"name="phone" id="phone" value="<?= $user['phone']?>" readonly></td>
                 </tr>
                 <tr>
@@ -53,7 +53,7 @@
               
                 <tr>
                     <td></td>
-                    <td><div class="btn-container"><a href=""></a><button type="subm    ``it" class="btn btn-primary ms-auto me-auto">Selanjutnya    </button></div></td>
+                    <td><div class="btn-container"><a href=""></a><button type="subm    ``it" class="btn btn-primary ms-auto me-auto">Wakaf    </button></div></td>
                 </tr>
                 
                     <small><?= form_error('email') ?> </small>
