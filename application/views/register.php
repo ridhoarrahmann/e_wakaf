@@ -36,7 +36,7 @@
                         <input type="text" name="email" placeholder="email" value="<?= set_value('email')?>">
                     </div>
                     <div class="register-form">
-                        <input type="text" name="phone" placeholder="Nomor Telepon" value="<?= set_value('phone')?>">
+                        <input type="number"name="phone" placeholder="Nomor Telepon" value="<?= set_value('phone')?>">
                     </div>
                     
                     <div class="register-form">

@@ -1,8 +1,8 @@
 <div class="content">
         <div class="form-sedekah-container " style="margin-top: 50px;">
             <div class="form mt-5" >
-            <h1>Form Wakaf Kendaraan</h1>
-            <form method="post" action="<?= base_url('index.php/user/wakaf_kendaraan')?>">
+            <h1>Form Wakaf Properi</h1>
+            <form method="post" action="<?= base_url('index.php/user/wakaf_elektronik')?>">
             <table cellpadding="7">
 
             <tr>
@@ -11,26 +11,21 @@
                 </tr>
               
                 <tr>
-                    <td><label for="jenis"> Jenis Kendaraan</label></td>
-                    <td><select name="jenis_kendaraan" id="wakaf_type" class="form-sedekah">
-                        <option value="mobil">Mobil</option>
-                        <option value="kendaraan">Motor</option>
-                        
+                    <td><label for="elektronik_type">Jenis Elektronik</label></td>
+                    <td><select name="jenis_elektronik" id="elektronik_type" class="form-sedekah">
+                        <option value="komputer">Tanah</option>
+                        <option value="laptop">Rumah</option>
+                        <option value="smartphone">Rumah</option>
                         
                     </select></td>
                 </tr>
                 <tr>
-                    <td><label for="nama_kendaraan"> Nama Kendaraan</label></td>
-                    <td><input type="text" class="form-sedekah"name="nama_kendaraan" id="name" ></td>
+                    <td><label for="nama">Nama model</label></td>
+                    <td><input type="text" class="form-sedekah"name="nama" id="nama" ></td>
                 </tr>
-                <tr>
-                    <td> <label for="tahun">Tahun</label> </td>
-                    <td><input type="text" class="form-sedekah" name="tahun" id="tahun"  ></td>
-                </tr>
-                <tr>
-                    <td><label for="plat"> Plat Nomer</label></td>
-                    <td><input type="text" class="form-sedekah"name="plat_nomor" id="plat" ></td>
-                </tr>
+                
+                
+         
                 
 
                 <tr>
@@ -56,7 +51,7 @@
           <tr>
             <th scope="col">date</th>
             <th scope="col">Nominal</th>
-            
+            <th scope="col">Nama</th>
             <th scope="col">Kategori</th>
             <th scope="col">status</th>
             
@@ -67,7 +62,7 @@
           <tr>
             <th scope="row"><?= $tr['date'] ?></th>
             <td><?= $tr['nominal']; ?></td>
-           
+            <td><?= $tr['username']; ?></td>
             <td><?= $tr['category']; ?></td>
             <td><?= $tr['status']; ?></td>
             

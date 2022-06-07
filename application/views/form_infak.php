@@ -5,7 +5,7 @@
             <h1>Form Infak</h1>
             <form method="post" action="<?= base_url('index.php/user/infaq')?>">
             <table cellpadding="7">
-
+            
             <tr>
                     <td><label for="id_user"> Id User</label></td>
                     <td><input type="text" class="form-sedekah"name="id_user" id="id_user" value="<?= $user['id']?>"></td>

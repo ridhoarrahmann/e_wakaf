@@ -38,16 +38,17 @@
                         
                     </select></td>
                 </tr>
+                <tr>
+                    <td><label for="cabang">Cabang</label></td>
+                    <td><select name="cabang" id="cabang" class="form-sedekah">
+                        <?php foreach($cabang as $cbg){ ?>
+                                <option value="<?= $cbg['cabang'] ?>"><?= $cbg['cabang'] ?></option>
+                            <?php }?>
+                    </select></td>
+                </tr>
 
-                <tr>
-                    <td><label for="amount">Jenis</label></td>
-                    <td><input type="text" class ="form-sedekah"name="amount" id="amount"></td>
-                </tr>
-                <tr>
-                <td><label for="desc">Deskripsi</label></td>
-                    <td><textarea class="form-sedekah"name="desc" id="desc" cols="30" rows="5"></textarea></td>
-                    
-                </tr>
+       
+               
                
                     
               
@@ -73,8 +74,8 @@
       <thead>
           <tr>
             <th scope="col">date</th>
-            <th scope="col">Nominal</th>
-            <th scope="col">Nama</th>
+           
+            
             <th scope="col">Kategori</th>
             <th scope="col">status</th>
             
@@ -84,8 +85,8 @@
         <?php foreach($transaction as $tr){ ?>
           <tr>
             <th scope="row"><?= $tr['date'] ?></th>
-            <td><?= $tr['nominal']; ?></td>
-            <td><?= $tr['username']; ?></td>
+            
+          
             <td><?= $tr['category']; ?></td>
             <td><?= $tr['status']; ?></td>
             

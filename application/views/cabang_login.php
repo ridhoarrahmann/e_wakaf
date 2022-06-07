@@ -15,7 +15,7 @@
             <div class="col-md-6 col1">
                 <div class="logo ">
                 <img src="<?= base_url('assets/')?>img/logo.png" alt="" class="">
-            
+                  
             
                 <h1>E-Wakaf</h1>
               </div>
@@ -27,7 +27,7 @@
                     <div class="login-form">
                     <input type="text" name="username" placeholder="Username">
                     </div>
-                    
+                       
                     <div class="login-form">
                     <input type="password" name="password" placeholder="Password">
                     </div>
